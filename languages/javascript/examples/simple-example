@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+const { createGll } = require("../");
+const { makeExecutableSchema } = require("graphql-tools");
+
+const user = {
+  name: "Joe User",
+  lists: [{ note: "a list item" }]
+};
+
+const schema = makeExecutableSchema({
+  typeInfo: `
+      type TodoListItem {
+        author: User!
+        note: String!
+        list: TodoList
+      }
+
+      type User {
+        name: String!
+        lists: [TodoList]
+      }
+
+      type TodoList {
+        name: String
+        items: [TodoListItem]
+      }
+
+      type Query {
+        currentUser: User
+      }
+    `,
+  resolvers: {
+    TodoListItem: {
+      author: user
+    },
+    Query: { currentUser: user }
+  }
+});
+
+module.exports = createGll(schema);
