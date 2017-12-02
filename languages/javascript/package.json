@@ -1,13 +1,14 @@
 {
-  "name": "libgll",
+  "name": "libgql",
   "version": "0.0.1",
   "description": "GraphQL Linked Library bindings for javascript.",
   "main": "index.js",
-  "repository": "git@github.com:brysgo/libgll.git",
+  "repository": "git@github.com:brysgo/libgql.git",
   "author": "Bryan Goldstein <brysgo@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "jest-cli": "^21.2.1"
+    "jest-cli": "^21.2.1",
+    "graphql-tools": "^2.11.0"
   },
   "dependencies": {
     "graphql": "^0.9.6"

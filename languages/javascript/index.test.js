@@ -6,11 +6,12 @@ beforeAll(() => {
   exampleGll = loadGll("./examples/simple-example");
 });
 
-test("a simple graphql query", () => {
+test("a simple graphql query", async () => {
 
   expect(await exampleGll(`
     query TestQuery {
       currentUser {
+        name
       }
     }
   `)).toMatchSnapshot();

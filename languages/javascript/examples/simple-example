@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { createGll } = require("../");
-const { makeExecutableSchema } = require("graphql-tools");
+const { makeExecutableSchema, addMockFunctionsToSchema } = require("graphql-tools");
 
 const user = {
   name: "Joe User",
@@ -9,7 +9,7 @@ const user = {
 };
 
 const schema = makeExecutableSchema({
-  typeInfo: `
+  typeDefs: `
       type TodoListItem {
         author: User!
         note: String!
@@ -29,13 +29,9 @@ const schema = makeExecutableSchema({
       type Query {
         currentUser: User
       }
-    `,
-  resolvers: {
-    TodoListItem: {
-      author: user
-    },
-    Query: { currentUser: user }
-  }
+    `
 });
+
+addMockFunctionsToSchema({ schema });
 
 module.exports = createGll(schema);

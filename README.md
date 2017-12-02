@@ -1,4 +1,4 @@
-# libgll - GraphQL Linked Libraries
+# libgql - GraphQL Linked Libraries
 
 ## The Problem
 
