@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
-const { createGll } = require("../");
-const { makeExecutableSchema, addMockFunctionsToSchema } = require("graphql-tools");
+const { createModule } = require("../");
+const {
+  makeExecutableSchema,
+  addMockFunctionsToSchema
+} = require("graphql-tools");
 
 const user = {
   name: "Joe User",
@@ -34,4 +37,4 @@ const schema = makeExecutableSchema({
 
 addMockFunctionsToSchema({ schema });
 
-module.exports = createGll(schema);
+module.exports = createModule(schema);

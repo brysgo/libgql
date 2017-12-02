@@ -4,7 +4,7 @@ const { exec } = require("child_process");
 const stream = require("stream");
 
 module.exports = {
-  createGll: function(schema) {
+  createModule: function(schema) {
     process.stdin.setEncoding("utf8");
 
     process.stdin.on("readable", function() {
@@ -26,7 +26,7 @@ module.exports = {
       process.stdout.write("end");
     });
   },
-  loadGll: function(path) {
+  loadModule: function(path) {
     const processStream = new stream.Writable();
     let resolve;
     let nextResult;

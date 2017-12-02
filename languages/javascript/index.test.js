@@ -1,14 +1,17 @@
-const { loadGll } = require("./");
+const { loadModule } = require("./");
 
 
-let exampleGll;
+let exampleGql;
 beforeAll(() => {
-  exampleGll = loadGll("./examples/simple-example");
+  exampleGql = loadModule("./examples/simple-example");
+});
+afterAll(() => {
+  exampleGql.close();
 });
 
 test("a simple graphql query", async () => {
 
-  expect(await exampleGll(`
+  expect(await exampleGql(`
     query TestQuery {
       currentUser {
         name
