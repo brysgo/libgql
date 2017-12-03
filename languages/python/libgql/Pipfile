@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+
 graphene = ">=2.0"
 six = "*"
 
@@ -23,3 +24,4 @@ six = "*"
 pytest = "*"
 "autopep8" = "*"
 snapshottest = "*"
+twine = "*"
