@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "scripts": {
+    "install": "cd libgql && pipenv install --dev",
+    "test": "cd libgql && pipenv run pytest"
+  }
+}

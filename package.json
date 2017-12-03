@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "workspaces": [
+    "languages/*"
+  ],
+  "scripts": {
+    "install": "./scripts/runEach install",
+    "test": "./scripts/runEach test"
+  }
+}

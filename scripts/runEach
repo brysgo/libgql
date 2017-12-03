@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+const { execSync } = require("child_process");
+const fs = require("fs");
+
+const root = "./languages/";
+
+fs.readdir(root, function(err, files) {
+  if (err) {
+    console.error("Could not list the directory.", err);
+    process.exit(1);
+  }
+  files.forEach(function(file, index) {
+    fs.stat(root + file, function(error, stat) {
+      if (error) {
+        console.error("Error stating file.", error);
+        return;
+      }
+
+      if (stat.isDirectory()) {
+        execSync("yarn " + process.argv[2], {
+          cwd: root + file,
+          stdio: [0, 1, 2]
+        });
+      }
+    });
+  });
+});

@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "graphql": "^0.9.6"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
