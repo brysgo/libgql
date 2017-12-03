@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+graphene = ">=2.0"
+
+
+
+
+
+
+
+
+
+
+[dev-packages]
+
+pytest = "*"
+"autopep8" = "*"
+snapshottest = "*"
