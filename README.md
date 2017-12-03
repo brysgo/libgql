@@ -1,5 +1,7 @@
 # libgql - GraphQL Linked Libraries
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/brysgo/libgql.svg)](https://greenkeeper.io/)
+
 ## The Problem
 
 How can I build libraries and modules that operate accross programming
