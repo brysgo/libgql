@@ -18,5 +18,5 @@ without all the fuss.
 
 ## What does it do?
 
-libgll will define a protocal for doing graphql over CLI and implement as many
+libgql will define a protocal for doing graphql over CLI and implement as many
 language bindings as we possibly can.
