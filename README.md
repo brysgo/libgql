@@ -20,3 +20,35 @@ without all the fuss.
 
 libgql will define a protocal for doing graphql over CLI and implement as many
 language bindings as we possibly can.
+
+## Usage
+
+I would recommend looking at the tests for usage, since it varies from language
+to language. To consume a module that uses libgql, install the bindings for your
+language:
+
+| javascript | `yarn add libgql`       |
+|------------|-------------------------|
+| python     | `pipenv install libgql` |
+
+Then import the bindings and load the module:
+
+
+### javascript
+```javascript
+import { loadModule } from "libgql"
+
+const myModule = loadModule("./path/to/libgql/module/executable");
+
+result = await myModule(graphqlQueryStringHere, optionalVariables);
+```
+
+### python
+
+```python
+from "libgql" import load_module
+
+myModule = load_module("./path/to/libgql/module/executable")
+
+result = myModule(graphqlQueryStringHere, optionalVariables)
+```
