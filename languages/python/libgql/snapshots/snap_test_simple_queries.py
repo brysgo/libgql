@@ -7,5 +7,5 @@ from snapshottest import Snapshot
 
 snapshots = Snapshot()
 
-snapshots['test_simple_queries 1'] = '''{ data: { currentUser: { name: 'Hello World' } } }
-end'''
+snapshots['test_simple_queries 1'] = '''{"data": {"currentUser": {"name": "Hello World"}}}
+'''

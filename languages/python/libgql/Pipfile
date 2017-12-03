@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 graphene = ">=2.0"
+six = "*"
+
+
 
 
 
