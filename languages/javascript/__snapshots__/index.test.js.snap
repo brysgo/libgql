@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`a simple graphql query 1`] = `
-"{ data: { currentUser: { name: 'Hello World' } } }
+"{ data:
+   [Object: null prototype] {
+     currentUser: [Object: null prototype] { name: 'Hello World' } } }
 "
 `;
