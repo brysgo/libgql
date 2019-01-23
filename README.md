@@ -1,6 +1,10 @@
 # libgql - GraphQL Linked Libraries
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/brysgo/libgql.svg)](https://greenkeeper.io/)
+[![CircleCI][build-badge]][build]
+[![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
+
+[![npm package][npm-badge]][npm]
+[![pip package][pip-badge]][pip]
 
 ## The Problem
 
@@ -54,3 +58,15 @@ myModule = load_module("./path/to/libgql/module/executable")
 
 result = myModule(graphqlQueryStringHere, optionalVariables)
 ```
+
+[build-badge]: https://circleci.com/gh/brysgo/libgql.svg?style=shield
+[build]: https://circleci.com/gh/brysgo/libgql
+
+[npm-badge]: https://img.shields.io/npm/v/libgql.png?style=flat-square
+[npm]: https://www.npmjs.org/package/libgql
+
+[pip-badge]: https://badge.fury.io/py/libgql.svg
+[pip]: https://badge.fury.io/py/libgql
+
+[greenkeeper-badge]: https://badges.greenkeeper.io/brysgo/libgql.svg
+[greenkeeper]: https://greenkeeper.io/
