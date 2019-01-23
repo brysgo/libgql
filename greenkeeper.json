@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "languages/javascript/package.json",
+        "languages/python/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
