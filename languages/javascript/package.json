@@ -11,7 +11,7 @@
     "graphql-tools": "^3.0.4"
   },
   "dependencies": {
-    "graphql": "^0.13.2"
+    "graphql": "^14.2.0"
   },
   "scripts": {
     "test": "jest"
