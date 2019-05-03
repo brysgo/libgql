@@ -7,8 +7,8 @@
   "author": "Bryan Goldstein <brysgo@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "jest-cli": "^23.2.0",
-    "graphql-tools": "^4.0.4"
+    "graphql-tools": "^4.0.4",
+    "jest-cli": "^24.7.1"
   },
   "dependencies": {
     "graphql": "^14.2.0"
