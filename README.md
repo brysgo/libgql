@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This project never took off and is not worth maintaining anymore. Let me know if it interests you.
+
 # libgql - GraphQL Linked Libraries
 
 [![CircleCI][build-badge]][build]
