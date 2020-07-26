@@ -8,20 +8,10 @@ name = "pypi"
 graphene = ">=2.0"
 six = "*"
 
-
-
-
-
-
-
-
-
-
-
-
 [dev-packages]
 
 pytest = "*"
 "autopep8" = "*"
 snapshottest = "*"
 twine = "*"
+urllib3 = ">=1.24.2"
